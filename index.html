@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO -->
+  <title>SoundSteps – Helping Parents Support Their Child's Speech at Home</title>
+  <meta name="description" content="SoundSteps is a parent-led speech sound practice companion. Simple daily routines designed to help your child develop speech skills at home while you wait for NHS support." />
+  <meta name="keywords" content="children's speech therapy app, parent-led speech practice, speech delay support at home, NHS speech therapy wait times, speech sound practice for kids, early access speech app UK" />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:title" content="SoundSteps – Speech Practice for Families" />
+  <meta property="og:description" content="Calm, structured daily speech practice routines for parents and children. Join Early Access today." />
+  <meta property="og:type" content="website" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Google Analytics placeholder -->
+  <!-- Replace GA_MEASUREMENT_ID with your actual ID -->
+  <!--
+  <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'GA_MEASUREMENT_ID');
+  </script>
+  -->
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════
+       NAVBAR
+  ═══════════════════════════════════════════ -->
+  <nav class="navbar navbar-expand-lg ss-navbar fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="https://i.ibb.co.com/ccpsjwgj/Sound.png" alt="SoundSteps Logo" class="ss-logo" />
+      </a>
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-label="Toggle navigation">
+        <i class="bi bi-list fs-2 text-primary"></i>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav align-items-center gap-2">
+          <li class="nav-item"><a class="nav-link" href="#problem">The Challenge</a></li>
+          <li class="nav-item"><a class="nav-link" href="#approach">Our Approach</a></li>
+          <li class="nav-item"><a class="nav-link" href="#how-it-works">How It Works</a></li>
+          <li class="nav-item"><a class="nav-link" href="#mission">Our Mission</a></li>
+          <li class="nav-item ms-lg-3">
+            <a class="btn ss-btn-primary btn-sm px-4" href="#early-access">Join Early Access</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════════════════════════
+       HERO SECTION
+  ═══════════════════════════════════════════ -->
+  <section class="ss-hero" id="hero">
+    <div class="ss-hero-blob ss-blob-1"></div>
+    <div class="ss-hero-blob ss-blob-2"></div>
+    <div class="container position-relative">
+      <div class="row align-items-center min-vh-100 py-5">
+        <div class="col-lg-6 hero-text-col">
+          <span class="ss-tag mb-4 d-inline-block animate-fadein">🌱 Now accepting early families</span>
+          <h1 class="ss-hero-headline animate-fadein-delay-1">
+            Helping parents support their child's speech
+            <em>at home.</em>
+          </h1>
+          <p class="ss-hero-sub animate-fadein-delay-2">
+            Whether you're on the NHS waiting list or looking for something to support ongoing therapy — SoundSteps gives you a calm, guided routine to practise speech sounds with your child, every day.
+          </p>
+          <div class="d-flex flex-wrap align-items-center gap-3 mt-4 animate-fadein-delay-3">
+            <a href="#early-access" class="btn ss-btn-primary ss-btn-lg">
+              Join Early Access
+              <i class="bi bi-arrow-right ms-2"></i>
+            </a>
+          </div>
+          <p class="ss-reassurance mt-3 animate-fadein-delay-3">
+            <i class="bi bi-shield-check me-1 text-success"></i>
+            No spam. No cost. Just early updates and a chance to shape the app.
+          </p>
+        </div>
+        <div class="col-lg-6 hero-illustration-col mt-5 mt-lg-0 animate-fadein-delay-2">
+          <div class="ss-hero-card-wrapper">
+            <div class="ss-hero-illustration">
+              <svg viewBox="0 0 520 480" xmlns="http://www.w3.org/2000/svg" class="w-100">
+                
+                <defs>
+                  <clipPath id="circleClip">
+                    <circle cx="260" cy="240" r="210"/>
+                  </clipPath>
+                  <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+                    <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#3B82F6" flood-opacity="0.1"/>
+                  </filter>
+                </defs>
+
+                <!-- Background circle -->
+                <circle cx="260" cy="240" r="210" fill="#F0F7FF" opacity="0.7"/>
+
+                <!-- Image inside circle -->
+                <image 
+                  href="https://steps2life.com.au/cdn/shop/articles/know-child-needs-speech-therapy.webp?v=1730419225&width=1920"
+                  x="50" y="30" width="420" height="420"
+                  clip-path="url(#circleClip)"
+                  preserveAspectRatio="xMidYMid slice"/>
+
+                <!-- Border ring -->
+                <circle cx="260" cy="240" r="210" fill="none" stroke="#3B82F6" stroke-width="3" opacity="0.3"/>
+
+                <!-- Speech bubbles -->
+                <g class="ss-bubble-anim">
+                  <rect x="215" y="165" width="130" height="52" rx="16" fill="white" filter="url(#shadow)"/>
+                  <polygon points="245,217 260,232 275,217" fill="white"/>
+                  <text x="280" y="196" text-anchor="middle" font-family="DM Sans" font-size="13" fill="#5BA4CF" font-weight="600">
+                    <tspan x="280" dy="0">"ssss…"</tspan>
+                  </text>
+                  <circle cx="233" cy="192" r="10" fill="#EEF6FF"/>
+                  <text x="233" y="197" text-anchor="middle" font-size="12">🔊</text>
+                </g>
+
+                <!-- Sound waves -->
+                <g opacity="0.4" class="ss-wave-anim">
+                  <path d="M360 200 Q370 210 360 220" stroke="#5BA4CF" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+                  <path d="M368 193 Q384 210 368 227" stroke="#5BA4CF" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+                  <path d="M376 186 Q398 210 376 234" stroke="#5BA4CF" stroke-width="2" stroke-linecap="round" fill="none"/>
+                </g>
+
+                <!-- Stars -->
+                <text x="120" y="190" font-size="18" opacity="0.6">⭐</text>
+                <text x="380" y="155" font-size="14" opacity="0.5">✨</text>
+                <text x="345" y="320" font-size="22" opacity="0.5">🌟</text>
+
+                <!-- Progress dots at bottom -->
+                <circle cx="225" cy="420" r="6" fill="#5BA4CF"/>
+                <circle cx="245" cy="420" r="6" fill="#93C5FD"/>
+                <circle cx="265" cy="420" r="6" fill="#BFDBFE"/>
+                <circle cx="285" cy="420" r="4" fill="#E0EFFF"/>
+                <circle cx="300" cy="420" r="4" fill="#E0EFFF"/>
+
+              </svg>
+            </div>
+
+            <!-- Floating stat pill -->
+            <div class="ss-floating-pill ss-pill-1">
+              <i class="bi bi-clock-history text-warning me-2"></i>
+              <span>Avg. NHS wait: <strong>18+ months</strong></span>
+            </div>
+            <div class="ss-floating-pill ss-pill-2">
+              <i class="bi bi-star-fill text-warning me-1"></i>
+              <i class="bi bi-star-fill text-warning me-1"></i>
+              <i class="bi bi-star-fill text-warning me-1"></i>
+              <i class="bi bi-star-fill text-warning me-2"></i>
+              <span>Loved by early families</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       TRUST BAR
+  ═══════════════════════════════════════════ -->
+  <section class="ss-trust-bar py-4">
+    <div class="container">
+      <div class="row align-items-center justify-content-center text-center g-4">
+        <div class="col-6 col-md-3">
+          <div class="ss-trust-item">
+            <i class="bi bi-people-fill ss-trust-icon"></i>
+            <p class="mb-0"><strong>Parent-led</strong> design</p>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="ss-trust-item">
+            <i class="bi bi-shield-lock-fill ss-trust-icon"></i>
+            <p class="mb-0"><strong>Privacy</strong> first</p>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="ss-trust-item">
+            <i class="bi bi-calendar2-check-fill ss-trust-icon"></i>
+            <p class="mb-0"><strong>5-min</strong> daily routines</p>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="ss-trust-item">
+            <i class="bi bi-heart-fill ss-trust-icon"></i>
+            <p class="mb-0"><strong>Supportive</strong>, not clinical</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       THE PROBLEM
+  ═══════════════════════════════════════════ -->
+  <section class="ss-section ss-problem-section" id="problem">
+    <div class="container">
+      <div class="row justify-content-center mb-5">
+        <div class="col-lg-7 text-center">
+          <span class="ss-section-label">The Challenge</span>
+          <h2 class="ss-section-title">You know your child needs support.<br/>But where do you start?</h2>
+          <p class="ss-section-sub">
+            Navigating the speech therapy system is stressful. And in the meantime, the days keep passing. You're not alone in this — and you shouldn't have to wait to make a difference.
+          </p>
+        </div>
+      </div>
+
+      <!-- Stats Row -->
+      <div class="row g-4 mb-5 justify-content-center">
+        <div class="col-md-4">
+          <div class="ss-stat-card ss-stat-blue">
+            <div class="ss-stat-number">18<span>+ mo</span></div>
+            <div class="ss-stat-label">Average NHS speech therapy wait time in England</div>
+            <div class="ss-stat-source">NHS England Referral Data, 2023</div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="ss-stat-card ss-stat-rose">
+            <div class="ss-stat-number">1 in 5</div>
+            <div class="ss-stat-label">Children start school with speech, language, or communication needs</div>
+            <div class="ss-stat-source">ICAN, Bercow: 10 Years On, 2018</div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="ss-stat-card ss-stat-amber">
+            <div class="ss-stat-number">72<span>%</span></div>
+            <div class="ss-stat-label">Of parents feel unsure how to support speech development at home</div>
+            <div class="ss-stat-source">Parent Survey, SoundSteps Research, 2024</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pain Points -->
+      <div class="row g-4 justify-content-center">
+        <div class="col-lg-10">
+          <div class="row g-3">
+            <div class="col-md-4">
+              <div class="ss-pain-card">
+                <div class="ss-pain-icon">⏳</div>
+                <h4>The waiting feels endless</h4>
+                <p>You've been referred. You're on the list. But weeks turn into months with no support arriving.</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="ss-pain-card">
+                <div class="ss-pain-icon">😟</div>
+                <h4>You want to help but don't know how</h4>
+                <p>There's no manual. You love your child and you want to do something — but informal guesswork doesn't feel good enough.</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="ss-pain-card">
+                <div class="ss-pain-icon">📋</div>
+                <h4>Existing tools aren't built for parents</h4>
+                <p>Most resources are for professionals. The apps are either too clinical or too gamified — leaving parents in the middle with nothing that fits.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       OUR APPROACH
+  ═══════════════════════════════════════════ -->
+  <section class="ss-section ss-approach-section" id="approach">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-5">
+          <span class="ss-section-label">Our Approach</span>
+          <h2 class="ss-section-title">Calm, guided practice.<br/>Built for real family life.</h2>
+          <p class="ss-approach-body">
+            SoundSteps isn't a replacement for speech therapy — it's the bridge while you wait, and the companion that keeps momentum going between sessions.
+          </p>
+          <p class="ss-approach-body">
+            We designed it to fit around the beautiful chaos of family life. Short, structured, and always encouraging — for both of you.
+          </p>
+          <a href="#early-access" class="btn ss-btn-primary mt-3">Get Early Access <i class="bi bi-arrow-right ms-2"></i></a>
+        </div>
+        <div class="col-lg-7">
+          <div class="row g-3">
+            <div class="col-sm-6">
+              <div class="ss-approach-card">
+                <div class="ss-approach-icon" style="background:#EFF6FF;">
+                  <i class="bi bi-person-heart" style="color:#3B82F6;"></i>
+                </div>
+                <h5>Parent-led</h5>
+                <p>You are the guide. SoundSteps supports you with structure — not scripts that make you feel like a therapist.</p>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="ss-approach-card ss-approach-card-offset">
+                <div class="ss-approach-icon" style="background:#FFF7ED;">
+                  <i class="bi bi-calendar3" style="color:#F97316;"></i>
+                </div>
+                <h5>Simple daily routines</h5>
+                <p>5–10 minutes a day. Consistent, gentle practice that builds real progress over time.</p>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="ss-approach-card">
+                <div class="ss-approach-icon" style="background:#F0FDF4;">
+                  <i class="bi bi-emoji-smile" style="color:#22C55E;"></i>
+                </div>
+                <h5>Positive and encouraging</h5>
+                <p>No pass or fail. Every attempt is celebrated. Progress is recognised in small, meaningful steps.</p>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="ss-approach-card ss-approach-card-offset">
+                <div class="ss-approach-icon" style="background:#FFF1F2;">
+                  <i class="bi bi-wind" style="color:#F43F5E;"></i>
+                </div>
+                <h5>Reduces overwhelm</h5>
+                <p>We've distilled the complexity so you can focus on connection with your child — not on getting it perfect.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       HOW IT WORKS
+  ═══════════════════════════════════════════ -->
+  <section class="ss-section ss-hiw-section" id="how-it-works">
+    <div class="container">
+      <div class="row justify-content-center mb-5">
+        <div class="col-lg-6 text-center">
+          <span class="ss-section-label">How It Works</span>
+          <h2 class="ss-section-title">Five simple steps.<br/>One meaningful moment.</h2>
+          <p class="ss-section-sub">Each session is designed to feel like quality time, not homework. Here's what a typical practice looks like:</p>
+        </div>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-lg-11">
+          <div class="ss-steps-wrapper">
+
+            <div class="ss-step" data-step="1">
+              <div class="ss-step-icon-wrap">
+                <div class="ss-step-icon">
+                  <!-- Sound waves SVG -->
+                  <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="16" cy="16" r="4" fill="#3B82F6"/>
+                    <path d="M10 10 Q6 16 10 22" stroke="#3B82F6" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+                    <path d="M22 10 Q26 16 22 22" stroke="#3B82F6" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+                    <path d="M7 7 Q1 16 7 25" stroke="#93C5FD" stroke-width="2" stroke-linecap="round" fill="none"/>
+                    <path d="M25 7 Q31 16 25 25" stroke="#93C5FD" stroke-width="2" stroke-linecap="round" fill="none"/>
+                  </svg>
+                </div>
+                <div class="ss-step-num">1</div>
+              </div>
+              <div class="ss-step-content">
+                <h4>Listen to a sound</h4>
+                <p>SoundSteps plays a clear audio example of the target sound. Your child hears it modelled correctly before they try.</p>
+              </div>
+            </div>
+
+            <div class="ss-step-connector"><i class="bi bi-chevron-down"></i></div>
+
+            <div class="ss-step" data-step="2">
+              <div class="ss-step-icon-wrap">
+                <div class="ss-step-icon">
+                  <!-- Microphone SVG -->
+                  <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="11" y="4" width="10" height="16" rx="5" fill="#F43F5E"/>
+                    <path d="M6 16 C6 22.627 9.582 28 16 28 C22.418 28 26 22.627 26 16" stroke="#F43F5E" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+                    <line x1="16" y1="28" x2="16" y2="32" stroke="#F43F5E" stroke-width="2.5" stroke-linecap="round"/>
+                    <line x1="11" y1="32" x2="21" y2="32" stroke="#F43F5E" stroke-width="2.5" stroke-linecap="round"/>
+                  </svg>
+                </div>
+                <div class="ss-step-num">2</div>
+              </div>
+              <div class="ss-step-content">
+                <h4>Child repeats</h4>
+                <p>Your child has a go. The app records their attempt gently, with no pressure or judgement — just a warm prompt to try.</p>
+              </div>
+            </div>
+
+            <div class="ss-step-connector"><i class="bi bi-chevron-down"></i></div>
+
+            <div class="ss-step" data-step="3">
+              <div class="ss-step-icon-wrap">
+                <div class="ss-step-icon">
+                  <!-- Speech bubble -->
+                  <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="2" y="4" width="28" height="18" rx="9" fill="#22C55E"/>
+                    <path d="M8 22 L5 30 L14 24" fill="#22C55E"/>
+                    <circle cx="10" cy="13" r="2" fill="white"/>
+                    <circle cx="16" cy="13" r="2" fill="white"/>
+                    <circle cx="22" cy="13" r="2" fill="white"/>
+                  </svg>
+                </div>
+                <div class="ss-step-num">3</div>
+              </div>
+              <div class="ss-step-content">
+                <h4>You encourage</h4>
+                <p>SoundSteps gives you simple, friendly prompts on what to say next. No experience needed — just your love and consistency.</p>
+              </div>
+            </div>
+
+            <div class="ss-step-connector"><i class="bi bi-chevron-down"></i></div>
+
+            <div class="ss-step" data-step="4">
+              <div class="ss-step-icon-wrap">
+                <div class="ss-step-icon">
+                  <!-- Progress steps -->
+                  <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="2" y="18" width="8" height="12" rx="3" fill="#F97316"/>
+                    <rect x="12" y="11" width="8" height="19" rx="3" fill="#FB923C"/>
+                    <rect x="22" y="4" width="8" height="26" rx="3" fill="#FED7AA"/>
+                    <path d="M6 14 L16 8 L26 2" stroke="#EA580C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <circle cx="26" cy="2" r="2.5" fill="#EA580C"/>
+                  </svg>
+                </div>
+                <div class="ss-step-num">4</div>
+              </div>
+              <div class="ss-step-content">
+                <h4>Recording saved</h4>
+                <p>Each session is quietly logged. You build a picture of your child's progress over time — something genuinely useful at future appointments.</p>
+              </div>
+            </div>
+
+            <div class="ss-step-connector"><i class="bi bi-chevron-down"></i></div>
+
+            <div class="ss-step" data-step="5">
+              <div class="ss-step-icon-wrap">
+                <div class="ss-step-icon">
+                  <!-- Encouragement / star -->
+                  <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16 2 L19.5 12 L30 12 L21.5 18.5 L24.5 29 L16 22.5 L7.5 29 L10.5 18.5 L2 12 L12.5 12 Z" fill="#FBBF24" stroke="#F59E0B" stroke-width="1"/>
+                    <circle cx="16" cy="16" r="5" fill="#FEF3C7"/>
+                  </svg>
+                </div>
+                <div class="ss-step-num">5</div>
+              </div>
+              <div class="ss-step-content">
+                <h4>Gentle progress suggestions</h4>
+                <p>After each session, SoundSteps offers a small, actionable nudge for next time. Nothing overwhelming — just one kind step forward.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       EARLY ACCESS SIGNUP
+  ═══════════════════════════════════════════ -->
+  <section class="ss-section ss-signup-section" id="early-access">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="ss-signup-card">
+            <div class="text-center mb-5">
+              <span class="ss-section-label ss-label-light">Join Early Access</span>
+              <h2 class="ss-section-title ss-title-light">Be among the first families<br/>to try SoundSteps.</h2>
+              <p class="ss-section-sub ss-sub-light">
+                Early access families get free use of the app, direct input into features, and the knowledge that they helped build something that will support thousands of children. Fill in the form below — it takes under 3 minutes.
+              </p>
+            </div>
+
+            <form id="earlyAccessForm" novalidate>
+              <div class="ss-form-group-heading">About You</div>
+
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <label for="parentName" class="ss-label">Parent / Carer Name <span class="ss-required">*</span></label>
+                  <input type="text" id="parentName" name="parentName" class="form-control ss-input" placeholder="e.g. Sarah" required />
+                  <div class="invalid-feedback">Please enter your name.</div>
+                </div>
+                <div class="col-md-6">
+                  <label for="email" class="ss-label">Email Address <span class="ss-required">*</span></label>
+                  <input type="email" id="email" name="email" class="form-control ss-input" placeholder="you@example.com" required />
+                  <div class="invalid-feedback">Please enter a valid email address.</div>
+                </div>
+                <div class="col-md-6">
+                  <label for="location" class="ss-label">Your Location (Town / City) <span class="ss-required">*</span></label>
+                  <input type="text" id="location" name="location" class="form-control ss-input" placeholder="e.g. Manchester" required />
+                  <div class="invalid-feedback">Please enter your location.</div>
+                </div>
+                <div class="col-md-6">
+                  <label for="hearAbout" class="ss-label">How did you hear about us? <span class="ss-required">*</span></label>
+                  <select id="hearAbout" name="hearAbout" class="form-select ss-input" required>
+                    <option value="" disabled selected>Select an option…</option>
+                    <option>Facebook / Instagram</option>
+                    <option>Google Search</option>
+                    <option>Friend or family</option>
+                    <option>NHS / healthcare professional</option>
+                    <option>Facebook support group</option>
+                    <option>Other</option>
+                  </select>
+                  <div class="invalid-feedback">Please select an option.</div>
+                </div>
+              </div>
+
+              <div class="ss-form-group-heading mt-4">About Your Child</div>
+
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <label for="childAge" class="ss-label">Child's Age Range <span class="ss-required">*</span></label>
+                  <select id="childAge" name="childAge" class="form-select ss-input" required>
+                    <option value="" disabled selected>Select age range…</option>
+                    <option>Under 2 years</option>
+                    <option>2–3 years</option>
+                    <option>3–4 years</option>
+                    <option>4–5 years</option>
+                    <option>5–7 years</option>
+                    <option>7–10 years</option>
+                    <option>10+ years</option>
+                  </select>
+                  <div class="invalid-feedback">Please select an age range.</div>
+                </div>
+                <div class="col-md-6">
+                  <label for="appFor" class="ss-label">Who is the app for? <span class="ss-required">*</span></label>
+                  <select id="appFor" name="appFor" class="form-select ss-input" required>
+                    <option value="" disabled selected>Select an option…</option>
+                    <option>My child (parent/carer)</option>
+                    <option>A student I support (education professional)</option>
+                    <option>A patient / client (healthcare professional)</option>
+                    <option>Research / other</option>
+                  </select>
+                  <div class="invalid-feedback">Please select an option.</div>
+                </div>
+              </div>
+
+              <div class="ss-form-group-heading mt-4">Support Status</div>
+              <p class="ss-form-note mb-3">Is your child currently receiving speech therapy support?</p>
+
+              <div class="row g-2 mb-3">
+                <div class="col-sm-6 col-lg-3">
+                  <label class="ss-radio-label">
+                    <input type="radio" name="supportStatus" value="waiting_nhs" required />
+                    <span class="ss-radio-box">
+                      <i class="bi bi-hourglass-split"></i>
+                      Waiting for NHS support
+                    </span>
+                  </label>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                  <label class="ss-radio-label">
+                    <input type="radio" name="supportStatus" value="receiving_nhs" />
+                    <span class="ss-radio-box">
+                      <i class="bi bi-hospital"></i>
+                      Receiving NHS support
+                    </span>
+                  </label>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                  <label class="ss-radio-label">
+                    <input type="radio" name="supportStatus" value="receiving_private" />
+                    <span class="ss-radio-box">
+                      <i class="bi bi-person-check"></i>
+                      Receiving private support
+                    </span>
+                  </label>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                  <label class="ss-radio-label">
+                    <input type="radio" name="supportStatus" value="none" />
+                    <span class="ss-radio-box">
+                      <i class="bi bi-x-circle"></i>
+                      Not currently receiving support
+                    </span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="ss-form-group-heading mt-4">Your Thoughts</div>
+
+              <div class="mb-3">
+                <label for="concerns" class="ss-label">What concerns you most about your child's speech development? <span class="ss-required">*</span></label>
+                <textarea id="concerns" name="concerns" class="form-control ss-input" rows="3" placeholder="Share as much or as little as you'd like…" required></textarea>
+                <div class="invalid-feedback">Please share your thoughts.</div>
+              </div>
+
+              <div class="ss-form-group-heading mt-4">Optional Questions</div>
+
+              <div class="mb-3">
+                <label class="ss-label d-block mb-2">Would you be open to giving feedback on the app as it develops?</label>
+                <div class="d-flex gap-4">
+                  <label class="ss-check-label"><input type="radio" name="giveFeedback" value="yes" /> Yes, I'd love to help</label>
+                  <label class="ss-check-label"><input type="radio" name="giveFeedback" value="maybe" /> Maybe</label>
+                  <label class="ss-check-label"><input type="radio" name="giveFeedback" value="no" /> Not right now</label>
+                </div>
+              </div>
+
+              <div class="mb-4">
+                <label class="ss-label d-block mb-2">Do you feel there is enough local support available for your child's speech needs?</label>
+                <div class="d-flex gap-4">
+                  <label class="ss-check-label"><input type="radio" name="localSupport" value="yes" /> Yes</label>
+                  <label class="ss-check-label"><input type="radio" name="localSupport" value="no" /> No</label>
+                  <label class="ss-check-label"><input type="radio" name="localSupport" value="unsure" /> Not sure</label>
+                </div>
+              </div>
+
+              <div class="d-grid">
+                <button type="submit" class="btn ss-btn-primary ss-btn-submit">
+                  <span class="btn-text">Join Early Access — It's Free</span>
+                  <i class="bi bi-arrow-right ms-2"></i>
+                </button>
+              </div>
+
+              <p class="ss-privacy-note mt-3 text-center">
+                <i class="bi bi-lock-fill me-1"></i>
+                Your information is stored securely and will never be shared with third parties. By submitting you agree to receive occasional updates about SoundSteps. Unsubscribe at any time.
+              </p>
+            </form>
+
+            <!-- Success State -->
+            <div class="ss-form-success d-none" id="formSuccess">
+              <div class="text-center py-4">
+                <div class="ss-success-icon mb-4">🎉</div>
+                <h3>You're on the list!</h3>
+                <p class="ss-section-sub ss-sub-light">Thank you so much for joining us. We'll be in touch soon with your early access details. In the meantime, if you have any questions just email us at <a href="mailto:hello@soundsteps.app">hello@soundsteps.app</a>.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       OUR MISSION
+  ═══════════════════════════════════════════ -->
+  <section class="ss-section ss-mission-section" id="mission">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-5">
+          <div class="ss-mission-visual">
+            <div class="ss-mission-blob"></div>
+            <svg viewBox="0 0 380 320" xmlns="http://www.w3.org/2000/svg" class="w-100">
+              <!-- Background circle -->
+              <circle cx="190" cy="160" r="130" fill="#EFF6FF" opacity="0.7"/>
+              
+              <!-- Clipping path for circular image -->
+              <defs>
+                <clipPath id="circleClip">
+                  <circle cx="190" cy="160" r="120"/>
+                </clipPath>
+              </defs>
+              
+              <!-- Image inside circle -->
+              <image 
+                href="https://www.earlystartaustralia.com.au/wp-content/uploads/2025/07/speech-pathology-assessments-3.jpg"
+                x="70" y="40"
+                width="240" height="240"
+                clip-path="url(#circleClip)"
+                preserveAspectRatio="xMidYMid slice"
+              />
+              
+              <!-- Border ring -->
+              <circle cx="190" cy="160" r="120" fill="none" stroke="#3B82F6" stroke-width="4"/>
+              
+              <!-- Small stars -->
+              <text x="65" y="72" font-size="16">⭐</text>
+              <text x="295" y="78" font-size="12">✨</text>
+              <text x="310" y="200" font-size="14">🌟</text>
+              
+              <!-- Families text -->
+              <text x="190" y="300" text-anchor="middle" font-family="Fraunces" font-size="15" fill="#3B82F6" font-weight="600">Built for families, by families</text>
+            </svg>
+          </div>
+        </div>
+        <div class="col-lg-7">
+          <span class="ss-section-label">Our Mission</span>
+          <h2 class="ss-section-title">We're building this because <em>it needs to exist.</em></h2>
+          <p class="ss-mission-body">
+            SoundSteps was born from a simple truth: too many children are waiting too long, and the parents who love them most have nowhere structured to turn.
+          </p>
+          <p class="ss-mission-body">
+            We're not a clinical tool. We're not a game. We're a thoughtful, human-centred companion for the real moments of family life — the morning routines, the car rides, the quiet evenings where you want to do <em>something</em> meaningful.
+          </p>
+          <p class="ss-mission-body">
+            Early families who join now aren't just users. They're co-creators. Every piece of feedback, every story, every session will help us build something that genuinely works — for children like yours, across the UK and beyond.
+          </p>
+          <div class="ss-mission-values mt-4">
+            <div class="ss-value-pill"><i class="bi bi-heart-fill me-2 text-danger"></i> Always parent-first</div>
+            <div class="ss-value-pill"><i class="bi bi-eye-fill me-2 text-primary"></i> Transparent and honest</div>
+            <div class="ss-value-pill"><i class="bi bi-stars me-2 text-warning"></i> Powered by real families</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════════ -->
+  <footer class="ss-footer">
+    <div class="container">
+      <div class="row align-items-center gy-4">
+        <div class="col-md-4">
+          <img src="https://i.ibb.co.com/ccpsjwgj/Sound.png" alt="SoundSteps" class="ss-footer-logo mb-2" />
+          <p class="ss-footer-tagline">Helping families find their voice.</p>
+        </div>
+        <div class="col-md-4 text-md-center">
+          <p class="mb-1"><i class="bi bi-envelope-fill me-2 text-primary"></i><a href="mailto:hello@soundsteps.app">hello@soundsteps.app</a></p>
+          <p class="mb-0 ss-footer-small"></p>
+        </div>
+        <div class="col-md-4 text-md-end">
+          <div class="d-flex gap-3 justify-content-md-end mb-2">
+            <a href="#" class="ss-footer-link">Privacy Policy</a>
+            <a href="#" class="ss-footer-link">Terms</a>
+            <a href="#" class="ss-footer-link">Contact</a>
+          </div>
+          <p class="ss-footer-small">© 2026 Dev- Shofiqur | All rights reserved.<br/> </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button class="ss-back-top d-none" id="backToTop" aria-label="Back to top">
+    <i class="bi bi-chevron-up"></i>
+  </button>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom JS -->
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SoundSteps — Design System</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    body { background: #F8FAFC; }
+    .ds-page { max-width: 1100px; margin: 0 auto; padding: 3rem 1.5rem; }
+    .ds-section { margin-bottom: 4rem; }
+    .ds-section-title {
+      font-family: 'Fraunces', serif;
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #0F172A;
+      margin-bottom: 1.5rem;
+      padding-bottom: 0.75rem;
+      border-bottom: 2px solid #E2E8F0;
+    }
+    .ds-label {
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #64748B;
+      margin-top: 0.75rem;
+      margin-bottom: 0.25rem;
+    }
+    .ds-hex {
+      font-family: monospace;
+      font-size: 0.8rem;
+      color: #64748B;
+    }
+    .ds-swatch {
+      width: 100%;
+      height: 72px;
+      border-radius: 12px;
+      margin-bottom: 0.5rem;
+      border: 1px solid rgba(0,0,0,0.06);
+    }
+    .ds-radius-demo {
+      background: #3B82F6;
+      height: 60px;
+      margin-bottom: 0.5rem;
+    }
+    .ds-spacing-bar {
+      background: linear-gradient(135deg, #3B82F6, #2563EB);
+      height: 12px;
+      border-radius: 6px;
+      margin-bottom: 0.4rem;
+    }
+    .ds-type-specimen { margin-bottom: 1.5rem; }
+    .code-block {
+      background: #0F172A;
+      color: #93C5FD;
+      border-radius: 12px;
+      padding: 1.25rem 1.5rem;
+      font-family: 'Courier New', monospace;
+      font-size: 0.85rem;
+      line-height: 1.7;
+      overflow-x: auto;
+      margin-bottom: 1rem;
+    }
+    .code-block .comment { color: #475569; }
+    .code-block .key { color: #F9A8D4; }
+    .code-block .val { color: #86EFAC; }
+    .code-block .str { color: #FDE68A; }
+    .ds-hero { background: linear-gradient(135deg, #EFF6FF 0%, #FFF7ED 100%); border-radius: 24px; padding: 3rem; margin-bottom: 2rem; }
+    .ds-icon-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); gap: 1rem; }
+    .ds-icon-item { text-align: center; padding: 1.25rem 0.75rem; background: white; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.06); }
+    .ds-icon-item i { font-size: 1.6rem; color: #3B82F6; display: block; margin-bottom: 0.5rem; }
+    .ds-icon-item span { font-size: 0.72rem; color: #64748B; }
+  </style>
+</head>
+<body>
+<div class="ds-page">
+
+  <!-- Header -->
+  <div class="ds-hero">
+    <div class="d-flex align-items-center gap-3 mb-3">
+      <img src="https://freedomitinstitutions.com/wp-content/uploads/2023/11/fit-font-change-bg-logo-e1701181828197.png" alt="SoundSteps" style="height:52px;">
+    </div>
+    <h1 style="font-family:'Fraunces',serif; font-size:2.2rem; font-weight:700; margin-bottom:0.5rem;">Design System</h1>
+    <p style="color:#64748B; font-size:1rem; margin:0;">Version 1.0 · Landing Page MVP · Prepared for client delivery</p>
+  </div>
+
+  <!-- ── COLOUR PALETTE ── -->
+  <div class="ds-section">
+    <div class="ds-section-title">Colour Palette</div>
+    <div class="row g-3">
+      <div class="col-6 col-md-3 col-lg-2">
+        <div class="ds-swatch" style="background:#3B82F6;"></div>
+        <div class="ds-label">Primary Blue</div>
+        <div class="ds-hex">#3B82F6</div>
+        <div class="ds-hex" style="color:#94A3B8;">Blue 500</div>
+      </div>
+      <div class="col-6 col-md-3 col-lg-2">
+        <div class="ds-swatch" style="background:#2563EB;"></div>
+        <div class="ds-label">Blue Dark</div>
+        <div class="ds-hex">#2563EB</div>
+        <div class="ds-hex" style="color:#94A3B8;">Blue 600</div>
+      </div>
+      <div class="col-6 col-md-3 col-lg-2">
+        <div class="ds-swatch" style="background:#EFF6FF; border:1.5px solid #BFDBFE;"></div>
+        <div class="ds-label">Blue Tint</div>
+        <div class="ds-hex">#EFF6FF</div>
+        <div class="ds-hex" style="color:#94A3B8;">Blue 50</div>
+      </div>
+      <div class="col-6 col-md-3 col-lg-2">
+        <div class="ds-swatch" style="background:#F43F5E;"></div>
+        <div class="ds-label">Accent Rose</div>
+        <div class="ds-hex">#F43F5E</div>
+        <div class="ds-hex" style="color:#94A3B8;">Rose 500</div>
+      </div>
+      <div class="col-6 col-md-3 col-lg-2">
+        <div class="ds-swatch" style="background:#F59E0B;"></div>
+        <div class="ds-label">Amber</div>
+        <div class="ds-hex">#F59E0B</div>
+        <div class="ds-hex" style="color:#94A3B8;">Amber 500</div>
+      </div>
+      <div class="col-6 col-md-3 col-lg-2">
+        <div class="ds-swatch" style="background:#22C55E;"></div>
+        <div class="ds-label">Success Green</div>
+        <div class="ds-hex">#22C55E</div>
+        <div class="ds-hex" style="color:#94A3B8;">Green 500</div>
+      </div>
+      <div class="col-6 col-md-3 col-lg-2">
+        <div class="ds-swatch" style="background:#F97316;"></div>
+        <div class="ds-label">Orange</div>
+        <div class="ds-hex">#F97316</div>
+        <div class="ds-hex" style="color:#94A3B8;">Orange 500</div>
+      </div>
+      <div class="col-6 col-md-3 col-lg-2">
+        <div class="ds-swatch" style="background:#0F172A;"></div>
+        <div class="ds-label">Text Dark</div>
+        <div class="ds-hex">#0F172A</div>
+        <div class="ds-hex" style="color:#94A3B8;">Gray 900</div>
+      </div>
+      <div class="col-6 col-md-3 col-lg-2">
+        <div class="ds-swatch" style="background:#64748B;"></div>
+        <div class="ds-label">Text Body</div>
+        <div class="ds-hex">#64748B</div>
+        <div class="ds-hex" style="color:#94A3B8;">Gray 500</div>
+      </div>
+      <div class="col-6 col-md-3 col-lg-2">
+        <div class="ds-swatch" style="background:#F8FAFC; border:1.5px solid #E2E8F0;"></div>
+        <div class="ds-label">Background</div>
+        <div class="ds-hex">#F8FAFC</div>
+        <div class="ds-hex" style="color:#94A3B8;">Gray 50</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── TYPOGRAPHY ── -->
+  <div class="ds-section">
+    <div class="ds-section-title">Typography</div>
+    <div class="row g-4">
+      <div class="col-md-6">
+        <p class="ds-label">Display — Fraunces (Google Fonts)</p>
+        <div class="ds-type-specimen" style="font-family:'Fraunces',serif;">
+          <div style="font-size:3rem; font-weight:700; line-height:1.1; color:#0F172A;">Heading One</div>
+          <div style="font-size:2rem; font-weight:600; color:#0F172A;">Heading Two</div>
+          <div style="font-size:1.5rem; font-weight:400; color:#0F172A;">Heading Three</div>
+          <div style="font-size:1.1rem; font-style:italic; color:#3B82F6;">Italic emphasis</div>
+        </div>
+        <code class="code-block">font-family: 'Fraunces', Georgia, serif;<br>weights: 300, 400, 600, 700<br>use: headings, display, emphasis</code>
+      </div>
+      <div class="col-md-6">
+        <p class="ds-label">Body — DM Sans (Google Fonts)</p>
+        <div class="ds-type-specimen">
+          <div style="font-size:1.05rem; font-weight:400; color:#64748B; line-height:1.7;">Body text regular — DM Sans 400. Used for all paragraph copy, supporting text, and long-form content across the site.</div>
+          <div style="font-size:0.95rem; font-weight:600; color:#334155; margin-top:0.75rem;">Label / UI text — DM Sans 600</div>
+          <div style="font-size:0.8rem; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; color:#64748B; margin-top:0.5rem;">CAPTION / OVERLINE TEXT</div>
+        </div>
+        <code class="code-block">font-family: 'DM Sans', system-ui, sans-serif;<br>weights: 300, 400, 500, 600<br>use: body, UI, labels, captions</code>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── BUTTONS ── -->
+  <div class="ds-section">
+    <div class="ds-section-title">Button Styles</div>
+    <div class="d-flex flex-wrap gap-3 align-items-center mb-3">
+      <a href="#" class="btn ss-btn-primary ss-btn-lg">Join Early Access <i class="bi bi-arrow-right ms-2"></i></a>
+      <a href="#" class="btn ss-btn-primary">CTA Button</a>
+      <a href="#" class="btn ss-btn-primary btn-sm px-4">Small CTA</a>
+      <button class="btn" style="border:2px solid #3B82F6; color:#3B82F6; border-radius:9999px; padding:0.65rem 1.5rem; font-weight:600; background:white;">Outline Variant</button>
+    </div>
+    <code class="code-block">
+<span class="comment">/* Primary — full-radius pill, gradient, shadow */</span><br>
+<span class="key">background:</span> <span class="str">linear-gradient(135deg, #3B82F6, #2563EB)</span>;<br>
+<span class="key">border-radius:</span> <span class="val">9999px</span>;<br>
+<span class="key">box-shadow:</span> <span class="str">0 4px 14px rgba(59,130,246,0.35)</span>;<br>
+<span class="key">hover:</span> <span class="str">translateY(-2px) + deeper shadow</span>;
+    </code>
+  </div>
+
+  <!-- ── BORDER RADIUS ── -->
+  <div class="ds-section">
+    <div class="ds-section-title">Border Radius</div>
+    <div class="row g-3">
+      <div class="col-6 col-md-2">
+        <div class="ds-radius-demo" style="border-radius:8px;"></div>
+        <div class="ds-label">Small</div><div class="ds-hex">8px</div>
+      </div>
+      <div class="col-6 col-md-2">
+        <div class="ds-radius-demo" style="border-radius:16px;"></div>
+        <div class="ds-label">Medium</div><div class="ds-hex">16px</div>
+      </div>
+      <div class="col-6 col-md-2">
+        <div class="ds-radius-demo" style="border-radius:24px;"></div>
+        <div class="ds-label">Large</div><div class="ds-hex">24px</div>
+      </div>
+      <div class="col-6 col-md-2">
+        <div class="ds-radius-demo" style="border-radius:32px;"></div>
+        <div class="ds-label">X-Large</div><div class="ds-hex">32px</div>
+      </div>
+      <div class="col-6 col-md-2">
+        <div class="ds-radius-demo" style="border-radius:9999px;"></div>
+        <div class="ds-label">Full (Pill)</div><div class="ds-hex">9999px</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── SPACING ── -->
+  <div class="ds-section">
+    <div class="ds-section-title">Spacing System</div>
+    <div class="row g-2 align-items-end">
+      <div class="col-6 col-md-2">
+        <div class="ds-spacing-bar" style="width:8px;"></div>
+        <div class="ds-label">XS</div><div class="ds-hex">0.5rem / 8px</div>
+      </div>
+      <div class="col-6 col-md-2">
+        <div class="ds-spacing-bar" style="width:16px;"></div>
+        <div class="ds-label">SM</div><div class="ds-hex">1rem / 16px</div>
+      </div>
+      <div class="col-6 col-md-2">
+        <div class="ds-spacing-bar" style="width:24px;"></div>
+        <div class="ds-label">MD</div><div class="ds-hex">1.5rem / 24px</div>
+      </div>
+      <div class="col-6 col-md-2">
+        <div class="ds-spacing-bar" style="width:40px;"></div>
+        <div class="ds-label">LG</div><div class="ds-hex">2.5rem / 40px</div>
+      </div>
+      <div class="col-6 col-md-2">
+        <div class="ds-spacing-bar" style="width:64px;"></div>
+        <div class="ds-label">XL</div><div class="ds-hex">4rem / 64px</div>
+      </div>
+      <div class="col-6 col-md-2">
+        <div class="ds-spacing-bar" style="width:96px;"></div>
+        <div class="ds-label">2XL</div><div class="ds-hex">6rem / 96px</div>
+      </div>
+    </div>
+    <p class="mt-3" style="font-size:0.88rem; color:#64748B;">Section vertical padding uses <code>6rem</code>. Card internal padding uses <code>1.75–2rem</code>. Grid gaps use <code>1–1.5rem</code>.</p>
+  </div>
+
+  <!-- ── ICONS ── -->
+  <div class="ds-section">
+    <div class="ds-section-title">Icon Style Guide — Bootstrap Icons</div>
+    <p style="font-size:0.92rem; color:#64748B; margin-bottom:1.25rem;">All icons use Bootstrap Icons (bi-*). Maintain consistent sizing: 1.4rem for cards, 1.1rem for inline, 1.6rem for feature icons. Always pair with text for accessibility.</p>
+    <div class="ds-icon-grid">
+      <div class="ds-icon-item"><i class="bi bi-soundwave"></i><span>soundwave</span></div>
+      <div class="ds-icon-item"><i class="bi bi-mic-fill"></i><span>mic-fill</span></div>
+      <div class="ds-icon-item"><i class="bi bi-chat-heart-fill"></i><span>chat-heart</span></div>
+      <div class="ds-icon-item"><i class="bi bi-stars"></i><span>stars</span></div>
+      <div class="ds-icon-item"><i class="bi bi-person-heart"></i><span>person-heart</span></div>
+      <div class="ds-icon-item"><i class="bi bi-calendar3"></i><span>calendar3</span></div>
+      <div class="ds-icon-item"><i class="bi bi-emoji-smile"></i><span>emoji-smile</span></div>
+      <div class="ds-icon-item"><i class="bi bi-shield-check"></i><span>shield-check</span></div>
+      <div class="ds-icon-item"><i class="bi bi-graph-up-arrow"></i><span>graph-up</span></div>
+      <div class="ds-icon-item"><i class="bi bi-clock-history"></i><span>clock-history</span></div>
+      <div class="ds-icon-item"><i class="bi bi-heart-fill"></i><span>heart-fill</span></div>
+      <div class="ds-icon-item"><i class="bi bi-arrow-right"></i><span>arrow-right</span></div>
+    </div>
+  </div>
+
+  <!-- ── ILLUSTRATION BRIEF ── -->
+  <div class="ds-section">
+    <div class="ds-section-title">Illustration Direction Brief</div>
+    <div class="row g-4">
+      <div class="col-md-6">
+        <div style="background:white; border-radius:16px; padding:1.5rem; border:1.5px solid #E2E8F0;">
+          <h5 style="font-family:'Fraunces',serif; font-weight:700; margin-bottom:1rem;">✅ Style to use</h5>
+          <ul style="font-size:0.92rem; color:#64748B; line-height:1.9; padding-left:1.25rem;">
+            <li>Flat, soft vector illustration (SVG)</li>
+            <li>Rounded characters — warm and friendly</li>
+            <li>Palette: blues, peach skin tones, soft amber</li>
+            <li>Diverse representation (skin tones, hair types)</li>
+            <li>Scenes showing parent+child connection</li>
+            <li>Speech bubbles, sound waves as motifs</li>
+            <li>Minimal shading — clean cel-style fills</li>
+            <li>Reusable SVG components</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div style="background:white; border-radius:16px; padding:1.5rem; border:1.5px solid #E2E8F0;">
+          <h5 style="font-family:'Fraunces',serif; font-weight:700; margin-bottom:1rem;">❌ Style to avoid</h5>
+          <ul style="font-size:0.92rem; color:#64748B; line-height:1.9; padding-left:1.25rem;">
+            <li>Clinical or hospital imagery</li>
+            <li>Cartoon/game-like characters (too juvenile)</li>
+            <li>Stock photo realism</li>
+            <li>Dark or heavy colour fills</li>
+            <li>Complex scenes with many elements</li>
+            <li>Emoji-only decoration</li>
+            <li>3D renders or photorealistic CGI</li>
+            <li>Sad or anxious-looking characters</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div style="background:#EFF6FF; border-radius:16px; padding:1.5rem; margin-top:1rem; border:1.5px solid #BFDBFE;">
+      <p style="margin:0; font-size:0.92rem; color:#334155;"><strong>Recommended sources:</strong> Undraw.co (customisable colours), Storyset by Freepik (animated SVGs), Open Peeps (character builder), or commission a custom SVG illustrator aligned with the brief above. All illustrations should be SVG for performance and scaling.</p>
+    </div>
+  </div>
+
+  <!-- ── SEO ── -->
+  <div class="ds-section">
+    <div class="ds-section-title">SEO Structure</div>
+    <code class="code-block">
+<span class="comment">/* Semantic HTML heading hierarchy */</span><br>
+<span class="key">H1:</span> <span class="str">"Helping parents support their child's speech at home."</span><br>
+<span class="key">H2:</span> <span class="str">"You know your child needs support. But where do you start?"</span><br>
+<span class="key">H2:</span> <span class="str">"Calm, guided practice. Built for real family life."</span><br>
+<span class="key">H2:</span> <span class="str">"Five simple steps. One meaningful moment."</span><br>
+<span class="key">H2:</span> <span class="str">"Be among the first families to try SoundSteps."</span><br>
+<span class="key">H2:</span> <span class="str">"We're building this because it needs to exist."</span><br><br>
+<span class="comment">/* Primary keywords */</span><br>
+<span class="val">children's speech practice app UK</span><br>
+<span class="val">parent-led speech therapy at home</span><br>
+<span class="val">NHS speech therapy wait times support</span><br>
+<span class="val">speech sound practice for toddlers</span><br>
+<span class="val">early access speech app families</span>
+    </code>
+  </div>
+
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
